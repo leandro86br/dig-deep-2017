@@ -131,8 +131,8 @@ nav a:hover{color: rgba(255,255,255,0.5)}
 
 
 @media (max-width: 767px){
-    nav{width: 100%}
-    nav ul{height: 0; overflow: hidden; transition: linear 0.2s}
+    nav{width: 100%; background: #443062; border-radius: 2px}
+    nav ul{max-height: 0; overflow: hidden; transition: linear 0.2s}
     nav li{display:block; padding-left: 0; text-align: left; border-bottom: 2px solid rgba(0,0,0,0.1)}
     nav a{display: block; padding: 10px}
     nav a:hover{color: rgba(255,255,255,0.5)}
@@ -141,12 +141,13 @@ nav a:hover{color: rgba(255,255,255,0.5)}
     .login-header .btn{width: 150px}
 
     .btn-toggle-nav{position: absolute; top: 14px; right: 15px; padding:10px 10px 12px 10px; background: #443062; border-radius: 2px; z-index: 5}
+    
     .bar{display: block; margin:3px 0; width: 24px; height: 3px; background:#fff; transition: linear 0.2s}
-    .bar-close-1{-webkit-transform:rotate(45deg) translate(5px,4px); transform: rotate(45deg) translate(5px,4px); }
-    .bar-close-2{-webkit-transform:rotate(-45deg) translate(4px,-4px); transform: rotate(-45deg) translate(4px,-4px)}
+    
+    .bar-close .bar:nth-child(1) {-webkit-transform:rotate(45deg) translate(5px,4px); transform: rotate(45deg) translate(5px,4px)}
+    .bar-close .bar:nth-child(2) {visibility: hidden; opacity: 0}
+    .bar-close .bar:nth-child(3) {-webkit-transform:rotate(-45deg) translate(4px,-4px); transform: rotate(-45deg) translate(4px,-4px)}
 
-    .show-nav ul{height:260px}
-    .hide-bar{visibility: hidden; opacity: 0}
 }
 
 
@@ -155,7 +156,11 @@ nav a:hover{color: rgba(255,255,255,0.5)}
 
 .overlay{position: relative; top:0; background: rgba(0,0,0,0.5); min-height: 100%}
 
-.intro{padding-top: 260px; color: #fff!important; text-shadow: 0 0 10px #000}
+@media (min-width:768px){
+    .centralized-text { position: absolute; top: 52%; left: 50%; transform: translate(-50%, -50%); }
+}
+
+.intro{color: #fff!important; text-shadow: 0 0 10px #000}
 .intro h1, .intro p{margin: 0}
 .intro .btn{text-shadow: none}
 
@@ -202,9 +207,11 @@ nav a:hover{color: rgba(255,255,255,0.5)}
 .spacer{height:180px}/* USADO PARA COLOCAR O FOOTER DISTANTE EM PAGINAS DE ALTURA REDUZIDA */
 
 /* VOLTAR AO TOPO */
-.back-top{display:none; position:fixed; bottom:20px; right:20px; padding:10px 15px; background:#563D7C; color:#fff; border-radius:4px}
+.back-top{position:fixed; bottom:20px; right:20px; padding:10px 15px; background:#563D7C; color:#fff; border-radius:4px; transition:all ease-in-out 0.1s;}
 .back-top:hover, .back-top:focus, .back-top:active{color:#fff}
 .back-top:hover{transition:all 100ms ease-in-out 0s; background:#30123F}
+
+.hide-me{visibility: hidden; opacity: 0}
 
 
 /* CHECKOUT

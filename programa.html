@@ -18,11 +18,19 @@
 
 <body>
 
+<!-- NAV PARA NAVEGACAO MOBILE -->
+<a href="#">
+<div class="btn-toggle-nav">
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+</div>
+</a>
 
 <!-- HEADER
 *********************************************************************** -->
 
-<header>
+<header id="header">
 
 <div class="container">
 <div class="row">
@@ -39,7 +47,7 @@
 <div class="col-lg-6 col-md-7 col-sm-8 cn-xs">
 
     <nav>
-        <ul>
+        <ul id="nav-mobile">
             <li><a href="programas.html">Programas</a></li>
             <li><a href="sobre-nos.html">Sobre Nós</a></li>
             <li><a href="como-funciona.html">Como Funciona</a></li>
@@ -48,6 +56,7 @@
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
+
 
 </div><!-- COL -->
 
@@ -284,18 +293,21 @@ Além de assistir as aulas no tempo que achar melhor, o aluno também possui uma
 </div><!-- COL -->
 
 <div class="col-lg-3">
-<a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
-<i class="fa fa-angle-double-up fa-2x"></i>
-</a>
+<a href="#header" class="back-top hide-me text-center"> <i class="fa fa-angle-double-up fa-2x"></i> </a>
 </div><!-- COL -->
 
 </div><!-- ROW -->
 </div><!-- CONTAINER -->
 </footer>
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/nav.js"></script>
+<script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+	  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="js/functions.js"></script>
 
 </body>
 </html>
