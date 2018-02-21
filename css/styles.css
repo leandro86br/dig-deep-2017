@@ -190,7 +190,7 @@ nav a:hover{color: rgba(255,255,255,0.5)}
 .inline{padding-left:0}
 .inline li{display:inline; padding-right:15px; color:#ccc}
 
-.bg, .hr{background:url(../img/bg/mask-2.png)} /* USADO NO FUNDO DOS CURSOS RECENTES E NO FUNDO DAS DIVISOES */
+.bg, .hr{background:url(../img/bg/mask.png)} /* USADO NO FUNDO DOS CURSOS RECENTES E NO FUNDO DAS DIVISOES */
 .hr{height:20px; margin:30px 0} /* USADO PARA DIVIDIR SECOES - TEM O MESMO FUNDO DO BG */
 
 /* CORES  */
